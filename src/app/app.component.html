@@ -1,0 +1,30 @@
+<ion-app>
+  
+  <!-- this function like header tag in html5 -->
+    <ion-toolbar color=tertiary>
+      <ion-buttons slot="start">
+        <ion-menu-toggle>
+          <ion-button>
+            <ion-icon name="home"></ion-icon>
+          </ion-button>
+        </ion-menu-toggle>
+      </ion-buttons>
+      <ion-title>
+        Component Documentation
+      </ion-title>
+    </ion-toolbar>
+
+  <!-- this is will hold the split pane -->
+  <ion-content>
+    <ion-item>
+      <ion-label>Selectate birth ion-datetime</ion-label>
+      <ion-datetime
+        displayFormat="D MMM YYYY"
+        pickerFormat="D MMM YYYY"
+        [max]="maxDate"
+        [min]="minDate"></ion-datetime>
+    </ion-item>
+
+  </ion-content>
+
+</ion-app>
